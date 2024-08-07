@@ -69,7 +69,7 @@ group :development do
   gem 'letter_opener', '~> 1.10'
   gem 'rails_best_practices', '~> 1.23', '>= 1.23.2'
   gem "spring"
-  gem 'rubocop', '~> 1.65', '>= 1.65.1'
+  gem 'rubocop', '>= 1.0', '< 2.0' 
 end
 
 group :test do
@@ -82,3 +82,4 @@ gem 'cancancan', '~> 3.6', '>= 3.6.1'
 gem 'devise', '~> 4.9', '>= 4.9.4'
 gem 'devise_invitable', '~> 2.0', '>= 2.0.9'
 gem 'kaminari', '~> 1.2', '>= 1.2.2'
+
