@@ -15,6 +15,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
 
   
-  root 'stores#index', as: :store_index
+  root 'stores#index'#, as: :store_index
   # root "posts#index"
 end
