@@ -5,6 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable,
          :confirmable, :lockable, :trackable
   enum role: %i[seller admin]
-  has_many :products
-  has_one :business
+  has_many :products, dependent: :destroy
+  has_one :business, dependent: :destroy
 end
