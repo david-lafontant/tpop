@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :line_items
   resources :carts
+  
   # get 'stores/index'
   get 'admin', to: 'pages#home', as: :admin_home
   resources :businesses
@@ -17,6 +18,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
 
   
-  root 'stores#index'#, as: :store_index
+  root 'stores#index', as: :store_index
   # root "posts#index"
 end
