@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'stores/index'
   resources :businesses
   resources :products
   resources :categories
