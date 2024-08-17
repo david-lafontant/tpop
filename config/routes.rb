@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # get 'stores/index'
+  get 'admin', to: 'pages#home', as: :admin_home
   resources :businesses
   resources :products
   resources :categories
@@ -11,6 +13,8 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  root 'pages#home'
+
+  
+  root 'stores#index'#, as: :store_index
   # root "posts#index"
 end
