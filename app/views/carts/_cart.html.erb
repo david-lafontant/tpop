@@ -1,2 +1,8 @@
-<div id="<%= dom_id cart %>">
+<div id="<%= dom_id cart %>" class="mt-4">
+  <h2 class="fs-2"> Cart</h2>
+  <ul >
+    <% cart.line_items.each do |item| %>
+      <li><%= item.product.name %></li>
+    <% end %>
+  </ul>
 </div>
