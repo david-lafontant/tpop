@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :carts
   # get 'stores/index'
   get 'admin', to: 'pages#home', as: :admin_home
   resources :businesses
