@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :product do
-    name { "MyString" }
+    name { 'MyString' }
     description { nil }
-    price { "9.99" }
+    price { '9.99' }
     poster { nil }
     user { nil }
   end
