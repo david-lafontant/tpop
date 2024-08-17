@@ -1,35 +1,46 @@
 <div id="<%= dom_id cart %>" class="container mt-4 p-4">
   <h2 class="fs-2">Cart</h2>
   <table class="table table-success table-striped table-hover align-middle">
-    <thead></thead>
-    <tr>
-      <th scope="col">Quantity</th>
-      <th scope="col">Name</th>
-      <th scope="col">Amount</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% cart.line_items.each do |item| %>
+    <thead>
       <tr>
+        <th scope="col">Quantity</th>
+        <th scope="col">Name</th>
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render cart.line_items %>
+      <!--
+ 
+      <% cart.line_items.each do |item| %>
+        <tr>
+          <td>
+            <%= item.quantity %>
+          </td>
+          <td>
+            <%= item.product.name %>
+          </td>
+          <td>
+            <%= number_to_currency(item.total_price) %>
+          </td>
+        </tr>
+      <% end %>
+  -->
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="2">
+          Total: 
+        </th>
         <td>
-          <%= item.quantity %>
+          <span class="badge bg-success">
+            <%= number_to_currency(cart.total_price) %>
+          </span>
         </td>
-        <td>
-          <%= item.product.name %>
-        </td>
-        <td>
-          <%= number_to_currency(item.total_price) %></li>
-      </td>
-    </tr>
-  <% end %>
-</table>
-<div>
-  <h2>
-    Total: 
-    <span class="badge bg-success">
-      <%= number_to_currency(cart.total_price) %>
-    </span>
-  </h2>
-</div>
-<%= button_to "Empty cart", @cart, method: :delete , class: "btn btn-danger" %>
+      </tr>
+    </tfoot>
+  </table>
+  <div>
+    <%= button_to "Empty cart", @cart, method: :delete , class: "btn btn-danger" %>
+  </div>
 </div>
