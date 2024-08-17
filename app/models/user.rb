@@ -6,4 +6,5 @@ class User < ApplicationRecord
          :confirmable, :lockable, :trackable
   enum role: %i[seller admin]
   has_many :products
+  has_one :business
 end
