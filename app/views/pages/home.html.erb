@@ -1,15 +1,19 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-<% if user_signed_in? %>
-  <ul>
-    <li>
-      Hello&nbsp;<%= current_user.email%>
-    </li>
-    <li>
-      Role:&nbsp;<%= current_user.role%>
-    </li>
-    <li>
-      <%= link_to 'Log out', destroy_user_session_path, data: {turbo_method: :delete, turbo_confirm: "You are about to logout.\nAre you sure?"} %>
-    </li>
-  </ul>
-<% end %>
+<div class="container">
+  <div class="row">
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iure et magnam doloremque neque a excepturi dolores sit, adipisci doloribus, dignissimos, harum voluptas. Numquam voluptatum corrupti maiores, exercitationem magnam consequatur!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vel cupiditate facilis atque iste itaque recusandae soluta qui quae modi mollitia praesentium nobis dignissimos, voluptatem, aspernatur ratione aliquid, pariatur sed.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellat placeat velit enim quod, esse nisi earum possimus magni consequuntur molestiae impedit provident, illo aperiam est non voluptas consectetur voluptate.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iure et magnam doloremque neque a excepturi dolores sit, adipisci doloribus, dignissimos, harum voluptas. Numquam voluptatum corrupti maiores, exercitationem magnam consequatur!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vel cupiditate facilis atque iste itaque recusandae soluta qui quae modi mollitia praesentium nobis dignissimos, voluptatem, aspernatur ratione aliquid, pariatur sed.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellat placeat velit enim quod, esse nisi earum possimus magni consequuntur molestiae impedit provident, illo aperiam est non voluptas consectetur voluptate.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iure et magnam doloremque neque a excepturi dolores sit, adipisci doloribus, dignissimos, harum voluptas. Numquam voluptatum corrupti maiores, exercitationem magnam consequatur!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vel cupiditate facilis atque iste itaque recusandae soluta qui quae modi mollitia praesentium nobis dignissimos, voluptatem, aspernatur ratione aliquid, pariatur sed.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellat placeat velit enim quod, esse nisi earum possimus magni consequuntur molestiae impedit provident, illo aperiam est non voluptas consectetur voluptate.
+    </p>
+  </div>
+</div>
