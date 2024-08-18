@@ -1,0 +1,9 @@
+<tr id="<%= dom_id line_item %>" >
+  <td class="text-right"><%= line_item.quantity %></td>
+  <td class="pr-2">
+    <%= line_item.product.name %>
+  </td>
+  <td class="text-right font-bold">
+    <%= number_to_currency(line_item.total_price) %>
+  </td>
+</tr>

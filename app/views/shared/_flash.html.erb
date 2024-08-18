@@ -1,6 +1,10 @@
 <% if notice.present? %>
   <p class="notice"><%= notice %></p>
+<% else %>
+  <div id="notice" class="d-none"></div>
 <% end %>
 <% if alert.present? %>
   <p class="alert"><%= alert %></p>
+<% else %>
+  <div id="alert" class="d-none"></div>
 <% end %>
